@@ -15,17 +15,27 @@ public class Roster {
 
 
     public void addChar(Character ch){
+
         charList.add(ch);
     }
 
     public void removeChar(Character ch){
+
         charList.remove(ch);
     }
 
 
     public int getSize() {
+
         return charList.size();
     }
+
+    //Return character from specified index
+    public Character getChar(int i) {
+        return charList.get(i);
+    }
+
+
 
     //get attributes of each playable character
     public String getAttributes() {
